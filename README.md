@@ -2,7 +2,7 @@
 
 ## Tuesday 8 August, 2017
 
-### Bugfix: Increase maxListeners in GraphQL
+### Bugfix: Spell syncing stops working until the GraphQL server is rebooted
 
 **Cause:** EventEmitters were limited on the GraphQL server pub-sub system.
 
