@@ -1,3 +1,5 @@
+![Magikcraft Banner](readmeResources/logo.png)
+
 # Magikcraft Release Notes
 
 ## Tuesday 8 August, 2017
