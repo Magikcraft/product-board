@@ -19,3 +19,5 @@
 ### Enhancement
 
 The [Magikcraft Bar package](http://github.com/magikcraft/magikcraft-lore-ui-bar) is now part of the Magikcraft organisation on GitHub. Create cool interface bars with ease using this package.
+
+![UI Bar](https://media.giphy.com/media/xTkcEzfUCkrTC1q6li/giphy.gif)
