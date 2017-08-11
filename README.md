@@ -13,3 +13,9 @@
 **Fix:** The EventEmitter limit was raised to Infinity!
 
 **Result:** Spell syncing should now work reliably. When you save a spell in the Play App, it should be available immediately in Minecraft for you to cast it.
+
+## Saturday 12 August, 2017
+
+### Enhancement
+
+The [Magikcraft Bar package](http://github.com/magikcraft/magikcraft-lore-ui-bar) is now part of the Magikcraft organisation on GitHub. Create cool interface bars with ease using this package.
