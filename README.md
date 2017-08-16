@@ -27,9 +27,11 @@ The [Magikcraft Bar package](http://github.com/magikcraft/magikcraft-lore-ui-bar
 * Version 1.1.18 of the Magikcraft API 
 * Version 0.32 of the Server
 
+To view the current versions of a Magikcraft server, use the command `/magikcraft`.
+
 Internal changes to better support dynamic reloading of the Magikcraft API.
 
-The global eventbus object, which allows communication between JS Engines is re-enabled. This can be used to make spells that share player locations or shared state like a game score.
+The global `eventbus` object, which allows communication between JS Engines is re-enabled. This can be used to make spells that share player locations or shared state like a game score.
 
 Here is an example using it:
 
@@ -52,10 +54,11 @@ const topic = 'sitapati.msg';
 function subtest() {
     const say = magik.dixit;
     if (global.sub) {
-        say(global.sub.toString());
-        say(__eventbus__.topiclist);
-        say('Cancelling existing subscription');
-        global.sub.unsubscribe();
+        //say(global.sub.toString());
+        // unsubscribe is currently broken
+        //say('Cancelling existing subscription');
+        // global.sub.unsubscribe();
+        return;
     }
     say('Subscribing ')
     global.sub = eventbus.subscribe(
