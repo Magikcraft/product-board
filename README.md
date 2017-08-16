@@ -29,9 +29,11 @@ The [Magikcraft Bar package](http://github.com/magikcraft/magikcraft-lore-ui-bar
 
 To view the current versions of a Magikcraft server, use the command `/magikcraft`.
 
-Internal changes to better support dynamic reloading of the Magikcraft API.
+### In this release:
 
-The global `eventbus` object, which allows communication between JS Engines is re-enabled. This can be used to make spells that share player locations or shared state like a game score.
+1. Internal changes to better support dynamic updating of the Magikcraft API. There is no user-visible impact at this time. We're working on a workaround for https://github.com/npm/npm/issues/18178 at the moment.
+
+2. The global `eventbus` object, which allows pub/sub communication between JS Engines, is re-enabled. The eventbus can be used to make spells that share player locations (for example, to let you publish your location for others to teleport to you) or shared state like a game score.
 
 Here is an example using it:
 
