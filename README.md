@@ -19,7 +19,7 @@ These release notes are updated with new releases. Star this repo to get notific
 
 ![Gist View Button](readmeResources/Screen%20Shot%202017-08-19%20at%206.59.25%20pm.png)
 
-2. **Use yarn**: We switched the Magikcraft server from `npm` to use `yarn` instead, to work around [https://github.com/npm/npm/issues/18178](https://github.com/npm/npm/issues/18178#issuecomment-323504516). Magikcraft API updates now reliably reload. 
+2. **Use yarn**: We switched the Magikcraft server from `npm` to use `yarn` instead, to work around [https://github.com/npm/npm/issues/18178](https://github.com/npm/npm/issues/18178#issuecomment-323504516). Packages installed from GitHub repos now reliably update. 
 
 ### Known Issues
 
