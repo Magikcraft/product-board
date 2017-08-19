@@ -10,11 +10,26 @@ These release notes are updated with new releases. Star this repo to get notific
 
 ## Sunday 20 August
 
-* Version 1.1.16 of the Magikcraft API
+* Version 1.1.17 of the Magikcraft API
 
 1. **magik.clearTimeout()**: `magik.clearTimeout()` now cancels a timeout task created with `magik.setTimeout()`. Prior to this release it did not cancel the task. For an example of `magik.setTimeout()` and `magik.clearTimeout()`, see [runTests.js](https://gist.github.com/jwulf/17c6151ee47c7972f3523d84f5f52e78#file-runtests-js-L37).
 2. **magik.urlencode**: `magik.urlencode()` URL encodes a string. It is based on [this urlencode code](https://github.com/node-modules/urlencode), with the caveat that only UTF8 is supported in the 1.1.16 release. 
-3. **In-game tests for the Magikcraft API**: We've started a suite of tests that run inside Minecraft. You can view them [here](https://gist.github.com/jwulf/17c6151ee47c7972f3523d84f5f52e78#file-runtests-js). They are useful to prevent regressions between releases, and also are a good source of documentation of the API - in addition to the [Magikcraft API Documentation website](http://apidoc.magikcraft.io/modules/magikcraft.io.html) and the [Magikcraft.io typings package](https://github.com/Magikcraft/magikcraft.io).
+3. **EventEmitter**: The `EventEmitter` class is available in global scope. It is based on [Oliver Caldwall's EventEmitter](https://git.io/ee). Here is an example of using it in your own code:
+
+```
+const magik = magikcraft.io;
+
+function eeTest() {
+    const e = new EventEmitter();
+
+    e.on('_event', data => {
+        magik.dixit(`Event triggered with ${data}`);
+    });
+
+    e.emit('_event', 'test data');
+}
+```
+4. **In-game tests for the Magikcraft API**: We've started a suite of tests that run inside Minecraft. You can view them [here](https://gist.github.com/jwulf/17c6151ee47c7972f3523d84f5f52e78#file-runtests-js). They are useful to prevent regressions between releases, and also are a good source of documentation of the API - in addition to the [Magikcraft API Documentation website](http://apidoc.magikcraft.io/modules/magikcraft.io.html) and the [Magikcraft.io typings package](https://github.com/Magikcraft/magikcraft.io).
 
 ![In-game tests](readmeResources/tests_in_minecraft.png)
 
