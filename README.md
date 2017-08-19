@@ -8,6 +8,12 @@ Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraf
 
 These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
 
+## Sunday 20 August
+
+* Version 1.1.15 of the Magikcraft API
+
+1. **magik.clearTimeout()**: `magik.clearTimeout()` now cancels a timeout task created with `magik.setTimeout()`. Prior to this release it did not cancel the task. For an example of `magik.setTimeout()` and `magik.clearTimeout()`, see [runTests.js](https://gist.github.com/jwulf/17c6151ee47c7972f3523d84f5f52e78#file-runtests-js).
+
 ## Saturday 19 August
 
 * Version 1.0.2 of the [Spellbook App](https://play.magikcraft.io)
