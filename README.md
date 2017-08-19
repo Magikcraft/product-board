@@ -17,7 +17,7 @@
 
 ### Known Issues
 
-1. We're still working on the `/magikcraft` command so that it accurately reports the current Magikcraft API version. At the moment it reports the version at the time that the server is started, even when the API has been updated during the server's lifetime.
+1. The `/magikcraft` command in Minecraft reports the version at the time that the server is started, even when the API has been updated during the server's lifetime.
 
 ## Thursday 17 August
 
