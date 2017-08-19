@@ -33,7 +33,7 @@ These release notes are updated with new releases. Star this repo to get notific
 
 ## Thursday 17 August
 
-* Version 1.1.18 of the Magikcraft API 
+* Version 1.1.13 of the Magikcraft API 
 * Version 0.32 of the Server
 
 To view the current versions of a Magikcraft server, use the command `/magikcraft`.
