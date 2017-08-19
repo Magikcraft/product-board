@@ -33,39 +33,6 @@ To view the current versions of a Magikcraft server, use the command `/magikcraf
 
 1. Internal changes to better support dynamic updating of the Magikcraft API. There is no user-visible impact at this time. We're working on a workaround for https://github.com/npm/npm/issues/18178 at the moment.
 
-2. The global `eventbus` object, which allows pub/sub communication between JS Engines, is re-enabled. The eventbus can be used to make spells that share player locations (for example, to let you publish your location for others to teleport to you) or shared state like a game score.
+2. The global `eventbus` object, which allows pub/sub communication between JS Engines, is re-enabled. The eventbus can be used to make spells that share player locations (for example, to let you publish your location for others to teleport to you) or shared state like a game score. See the See the [README file for `magikcraft-lore-core`](https://github.com/Magikcraft/magikcraft-lore-core/blob/master/README.md#tojson-and-fromjson) for an example of the eventbus.
 
-Here is an example using it:
-
-`pubtest.js`
-```
-const magik = magikcraft.io;
-const topic = 'sitapati.msg';
-
-function pubtest() {
-    eventbus.publish(topic, 'Hello from the eventbus');
-    eventbus.publish(topic, {ok: true});
-}
-```
-
-`subtest.js`
-```
-const magik = magikcraft.io;
-const topic = 'sitapati.msg';
-
-function subtest() {
-    const say = magik.dixit;
-    if (global.sub) {
-        //say(global.sub.toString());
-        // unsubscribe is currently broken
-        //say('Cancelling existing subscription');
-        // global.sub.unsubscribe();
-        return;
-    }
-    say('Subscribing ')
-    global.sub = eventbus.subscribe(
-        topic, 
-        data => magik.dixit(data.data.toString())
-    );
-}
-```
+3. `toJSON` and `fromJSON` methods added to the Magikcraft API. These methods marshall a BukkitLocation to and from JSON. See the [README file for the `magikcraft-lore-core`](https://github.com/Magikcraft/magikcraft-lore-core/blob/master/README.md#tojson-and-fromjson) for an example use of these methods.
