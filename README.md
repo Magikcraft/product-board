@@ -15,7 +15,7 @@ These release notes are updated with new releases. Star this repo to get notific
 
 ### In this release
 
-1. **Gist View**: The 'Gist View' button in the spellbook now opens a new browser tab with your Magikcraft spells on GitHub. This allows you to easily copy a link to a specific spell to share with a friend.
+1. **Gist View**: The 'Gist View' button in the [spellbook](https://play.magikcraft.io) now opens a new browser tab with your Magikcraft spells on GitHub. This allows you to easily copy a link to a specific spell to share with a friend.
 
 ![Gist View Button](readmeResources/Screen%20Shot%202017-08-19%20at%206.59.25%20pm.png)
 
