@@ -2,6 +2,12 @@
 
 # Magikcraft Release Notes
 
+Magikcraft is the world's number 1 way to learn to code JavaScript in Minecraft.
+
+Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraft YouTube channel](https://www.youtube.com/channel/UC9cEOcTkQEyiKr2nCZDBYeg/videos).
+
+These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
+
 ## Saturday 19 August
 
 * Version 1.0.2 of the [Spellbook App](https://play.magikcraft.io)
