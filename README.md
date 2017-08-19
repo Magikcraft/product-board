@@ -11,6 +11,8 @@
 
 1. The 'Gist View' button in the spellbook now opens a new browser tab with your Magikcraft spells on GitHub. This allows you to easily copy a link to a specific spell to share with a friend.
 
+![Gist View Button](readmeResources/Screen Shot 2017-08-19 at 6.59.25 pm.png)
+
 2. We switched Magikcraft from `npm` to use `yarn` instead, to work around [https://github.com/npm/npm/issues/18178](https://github.com/npm/npm/issues/18178#issuecomment-323504516). Magikcraft API updates now reliably reload. 
 
 ### Known Issues
