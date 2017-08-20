@@ -1,5 +1,9 @@
 ![Magikcraft Banner](readmeResources/logo.png)
 
+# Issues and Feature Requests
+
+To report an issue or make a feature request, see the [Issues page](https://github.com/Magikcraft/magikcraft-release-notes/issues).
+
 # Magikcraft Release Notes
 
 Magikcraft is the world's number 1 way to learn to code JavaScript in Minecraft.
