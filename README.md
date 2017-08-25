@@ -12,6 +12,15 @@ Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraf
 
 These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
 
+## Friday 25 August
+
+* Version 1.1.19 of the Magikcraft API
+* Version 0.10.10 of the Endpoint
+
+1. The Event Store eventing has been refactored to make it cleaner and more modular. Refer to https://github.com/jwulf/play.magikcraft.io-endpoint/blob/develop/src/event-store.ts and https://github.com/jwulf/play.magikcraft.io-endpoint/blob/develop/src/player-events.ts.
+2. Player Join and Quit event names have been changed to `PlayerJoinedServer` and `PlayerQuitServer`. 
+3. Spell-casting now emits an event: `PlayerCastSpell`.
+
 ## Sunday 20 August
 
 * Version 1.1.17 of the Magikcraft API
