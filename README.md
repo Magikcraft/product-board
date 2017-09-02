@@ -12,6 +12,22 @@ Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraf
 
 These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
 
+## Sunday 3 September
+
+* Version 1.2.1 of the Magikcraft API
+
+### `playerMap`, `durablePlayerMap` and `globalMap`
+
+The Magikcraft API now exposes HashMaps that can be used by your code to store global state in your JavaScript engine, including between reloads of the JavaScript engine, or even between user sessions.
+
+The `magik.playerMap` is a Java HashMap with `get`, `put`, `containsKey`, and `clear` methods. Refer to the [Javadoc for HashMap](http://docs.oracle.com/javase/1.5.0/docs/api/java/util/HashMap.html) for more details.
+
+The `playerMap` is useful for storing state between invocations of spells. Examples of this include things like references to interface elements like `magik.Bars`, or a game score. As well as being durable between invocations of spells, it is durable between engine reloads. This means that you can install new packages, and any state you have stored in `playerMap` will still be there.
+
+The `magik.durablePlayerMap` HashMap takes this one step further. It is durable between sessions (but not between server reboots!). This means that you can store things like locations in it, log out, and they will be there the next time you log on. At a point in the future we will back this with a persistence store that survives server reboots - but for now it relies on the server process memory; so it is durable only for the life-time of the server process.
+
+The `magik.globalMap` HashMap is a ConcurrentHashMap that is accessible from all JavaScript engines. This means you can use it to store globally-shared state - for example, a shared game state. We recommend that you use namespaced keys like `'sitapati.game.border.progress'`.
+
 ## Sunday 20 August
 
 * Version 1.1.17 of the Magikcraft API
