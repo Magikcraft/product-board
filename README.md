@@ -20,6 +20,10 @@ These release notes are updated with new releases. Star this repo to get notific
 
 ### Install packages in Minecraft using `/npm install ${package}`
 
+Video of the feature: [https://www.youtube.com/watch?v=7tdhMNC0Fxc](https://www.youtube.com/watch?v=7tdhMNC0Fxc).
+
+[<img width="856" alt="screen shot 2017-09-04 at 12 22 03 am" src="https://user-images.githubusercontent.com/406975/30003822-3d124710-9107-11e7-850c-f3b3fdb2037b.png">](https://www.youtube.com/watch?v=7tdhMNC0Fxc)
+
 You can now run `/npm install <package>` to install an npm package in Minecraft on a Magikcraft server.
 
 Packages installed this way will not update your `package.json` and will need to be reinstalled next time you log in.
