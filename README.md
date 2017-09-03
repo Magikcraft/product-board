@@ -28,6 +28,8 @@ The `magik.durablePlayerMap` HashMap takes this one step further. It is durable 
 
 The `magik.globalMap` HashMap is a ConcurrentHashMap that is accessible from all JavaScript engines. This means you can use it to store globally-shared state - for example, a shared game state. We recommend that you use namespaced keys like `'sitapati.game.border.progress'`.
 
+[_Border Minecraft_](https://gist.github.com/jwulf/881990f6b3a99e13fe0b8a099b6eb6ac) is a minigame that illustrates the use of these new features, as well as the `eventbus` for pub-sub communication between players' JavaScript engines.
+
 ## Sunday 20 August
 
 * Version 1.1.17 of the Magikcraft API
