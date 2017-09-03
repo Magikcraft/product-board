@@ -28,6 +28,55 @@ The `magik.durablePlayerMap` HashMap takes this one step further. It is durable 
 
 The `magik.globalMap` HashMap is a ConcurrentHashMap that is accessible from all JavaScript engines. This means you can use it to store globally-shared state - for example, a shared game state. We recommend that you use namespaced keys like `'sitapati.game.border.progress'`.
 
+#### Example Spells
+
+Here is a pair of example spells that use `magik.durablePlayerMap` to remember locations, even when you quit and return to the server:
+
+*rem.js* - remember this place, optionally with a name
+```
+/**
+ * A persistent memory spell that uses magik.playerMap
+ * 
+ * This means you can remember things even when you leave the server and come back!
+ * 
+ * Usage:
+ * `/cast rem` -- remember this place as the default place
+ * `/cast rem <name>` -- remember this place as the name you give
+ */
+const magik = magikcraft.io;
+
+function rem(key="here") {
+    const here = magik.hic();
+	magik.durablePlayerMap.put(`memory.${key}`, here);
+    magik.dixit(`Remembered this place as "${key}"`);
+}
+```
+
+*mer.js* - teleport to a remembered location
+```
+/**
+ * Teleport to somewhere remembered using magik.playerMap
+ * 
+ * This means you can remember things even when you leave the server and come back!
+ * 
+ * Usage: 
+ * `/cast mer` -- teleport to the default remembered place
+ * `/cast mer <name>`  -- teleport to a named remembered place
+ */
+const magik = magikcraft.io;
+
+function mer(key="here") {
+    if (!magik.durablePlayerMap.containsKey(`memory.${key}`)) {
+        magik.dixit(`I don't remember a place "${key}`);
+        return;
+    }
+    const here = magik.durablePlayerMap.get(`memory.${key}`);
+    magik.ianuae(here);
+}
+```
+
+### Border Minigame
+
 [_Border Minecraft_](https://gist.github.com/jwulf/881990f6b3a99e13fe0b8a099b6eb6ac) is a minigame that illustrates the use of these new features, as well as the `eventbus` for pub-sub communication between players' JavaScript engines.
 
 ![2017-09-03_18 56 46](https://user-images.githubusercontent.com/406975/30001735-070abf44-90da-11e7-981b-edb8bba05e60.png)
