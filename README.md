@@ -15,6 +15,22 @@ These release notes are updated with new releases. Star this repo to get notific
 ## Sunday 3 September
 
 * Version 1.2.1 of the Magikcraft API
+* Version 0.13.1 of the Endpoint
+* Version 0.42 of the plugin
+
+### Install packages in Minecraft using `/npm install ${package}`
+
+You can now run `/npm install <package>` to install an npm package in Minecraft on a Magikcraft server.
+
+Packages installed this way will not update your `package.json` and will need to be reinstalled next time you log in.
+
+To have packages persistently installed, use the `package.json` file in the spellbook. To access this file: click on your avatar in the top-right corner of the spellbook, then choose `package.json` from the drop-down menu.
+
+Here are the variations of the `/npm` command in Magikcraft:
+
+`/npm update` - deletes your `node_modules` directory and reinstalls it from your `package.json`.
+`/npm install` - same effect as `/npm update`.
+`/npm install ${package_name}` - installs `${package_name}` for you but does not change your `package.json`.
 
 ### `playerMap`, `durablePlayerMap` and `globalMap`
 
