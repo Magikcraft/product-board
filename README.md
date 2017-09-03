@@ -30,6 +30,10 @@ The `magik.globalMap` HashMap is a ConcurrentHashMap that is accessible from all
 
 [_Border Minecraft_](https://gist.github.com/jwulf/881990f6b3a99e13fe0b8a099b6eb6ac) is a minigame that illustrates the use of these new features, as well as the `eventbus` for pub-sub communication between players' JavaScript engines.
 
+![2017-09-03_18 56 46](https://user-images.githubusercontent.com/406975/30001735-070abf44-90da-11e7-981b-edb8bba05e60.png)
+
+![2017-09-03_18 57 13](https://user-images.githubusercontent.com/406975/30001737-0dbf6240-90da-11e7-97b4-519c8fe6f894.png)
+
 ## Sunday 20 August
 
 * Version 1.1.17 of the Magikcraft API
