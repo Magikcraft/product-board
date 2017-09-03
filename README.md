@@ -28,9 +28,9 @@ To have packages persistently installed, use the `package.json` file in the spel
 
 Here are the variations of the `/npm` command in Magikcraft:
 
-`/npm update` - deletes your `node_modules` directory and reinstalls it from your `package.json`.
-`/npm install` - same effect as `/npm update`.
-`/npm install ${package_name}` - installs `${package_name}` for you but does not change your `package.json`.
+* `/npm update` - deletes your `node_modules` directory and reinstalls it from your `package.json`.
+* `/npm install` - same effect as `/npm update`.
+* `/npm install ${package_name}` - installs `${package_name}` for you but does not change your `package.json`.
 
 ### `playerMap`, `durablePlayerMap` and `globalMap`
 
