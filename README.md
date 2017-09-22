@@ -22,7 +22,7 @@ These release notes are updated with new releases. Star this repo to get notific
 
 Video of the feature: [https://www.youtube.com/watch?v=7tdhMNC0Fxc](https://www.youtube.com/watch?v=7tdhMNC0Fxc).
 
-[<img width="856" alt="screen shot 2017-09-04 at 12 22 03 am" src="https://user-images.githubusercontent.com/406975/30003822-3d124710-9107-11e7-850c-f3b3fdb2037b.png">](https://www.youtube.com/watch?v=7tdhMNC0Fxc)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7tdhMNC0Fxc" frameborder="0" allowfullscreen></iframe>
 
 You can now run `/npm install <package>` to install an npm package in Minecraft on a Magikcraft server.
 
