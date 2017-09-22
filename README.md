@@ -34,8 +34,6 @@ The feature was tracked in [Issue #19](https://github.com/Magikcraft/product-boa
 
 Video of the feature: [https://www.youtube.com/watch?v=7tdhMNC0Fxc](https://www.youtube.com/watch?v=7tdhMNC0Fxc).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7tdhMNC0Fxc" frameborder="0" allowfullscreen></iframe>
-
 You can now run `/npm install <package>` to install an npm package in Minecraft on a Magikcraft server.
 
 Packages installed this way will not update your `package.json` and will need to be reinstalled next time you log in.
