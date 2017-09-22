@@ -12,6 +12,18 @@ Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraf
 
 These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
 
+## Friday 22 September
+
+* Version 1.2.0 of the Magikcraft Lore Core
+
+### Memento now backed by durablePlayerMap
+
+As a user I can use memento remember things, and get kicked from the server, and reconnect and still have my memories.
+
+`magik.memento` now uses the new `durablePlayerMap` as it's backing. This means that your memories do not disappear when you quit, or are kicked from the server. They will disappear when the server is updated. We'll get that fixed soon, but it's not there yet.
+
+The feature was tracked in [Issue #19](https://github.com/Magikcraft/product-board/issues/19)
+
 ## Sunday 3 September
 
 * Version 1.2.1 of the Magikcraft API
