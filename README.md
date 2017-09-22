@@ -24,6 +24,10 @@ As a user I can use memento remember things, and get kicked from the server, and
 
 The feature was tracked in [Issue #19](https://github.com/Magikcraft/product-board/issues/19)
 
+### Videos in the Spellbook
+
+You can now watch videos in the Magikcraft Play App. There is a video tab that you can access here: [https://play.magikcraft.io/videos](https://play.magikcraft.io/videos).
+
 ## Sunday 3 September
 
 * Version 1.2.1 of the Magikcraft API
