@@ -40,15 +40,14 @@ Video of the feature: [https://www.youtube.com/watch?v=7tdhMNC0Fxc](https://www.
 
 You can now run `/npm install <package>` to install an npm package in Minecraft on a Magikcraft server.
 
-Packages installed this way will not update your `package.json` and will need to be reinstalled next time you log in.
-
-To have packages persistently installed, use the `package.json` file in the spellbook. To access this file: click on your avatar in the top-right corner of the spellbook, then choose `package.json` from the drop-down menu.
+To have packages persistently installed, use the `-S` or `--save` switch
 
 Here are the variations of the `/npm` command in Magikcraft:
 
 * `/npm update` - deletes your `node_modules` directory and reinstalls it from your `package.json`.
 * `/npm install` - same effect as `/npm update`.
 * `/npm install ${package_name}` - installs `${package_name}` for you but does not change your `package.json`.
+* `/npm i -S ${package_name}` or `/npm install --save ${package_name}` - installs `${package_name}` and updates your `package.json` file.
 
 ### `playerMap`, `durablePlayerMap` and `globalMap`
 
