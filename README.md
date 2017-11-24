@@ -6,11 +6,27 @@ To report an issue or make a feature request, see the [Issues page](https://gith
 
 # Magikcraft Release Notes
 
-Magikcraft is the world's number 1 way to learn to code JavaScript in Minecraft.
+Magikcraft is the world's most innovative platform for coding JavaScript in Minecraft.
 
 Check out the [Magikcraft website](https://www.magikcraft.io) and the [Magikcraft YouTube channel](https://www.youtube.com/channel/UC9cEOcTkQEyiKr2nCZDBYeg/videos).
 
 These release notes are updated with new releases. Star this repo to get notifications when it is updated. 
+
+## Saturday 22 November, 2017
+
+### Spell syncing
+
+We changed the spell syncing mechanism from subscription to polling. Intermittently, spell syncing fails. The workaround has been to disconnect from the server and then reconnect. We have not been able to reliably reproduce this issue to debug it. We're hoping that polling causes this issue to disappear. If you encounter it, please comment on [Issue #37](https://github.com/Magikcraft/product-board/issues/37).
+
+### New Lobby
+
+We have a new lobby as the default spawn location. 
+
+![lobby](https://user-images.githubusercontent.com/406975/33214093-30113846-d176-11e7-9efd-4966431efd12.png)
+
+### MC:T1 - Minecraft for Type 1 Diabetes
+
+We have a beta test version of Minecraft for Type 1 Diabetes. You can sign up for the beta at [www.mct1.io](http://www.mct1.io).
 
 ## Friday 22 September
 
